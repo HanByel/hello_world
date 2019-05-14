@@ -1,3 +1,10 @@
 compile command
-g++ -o print print.cpp
-g++ -o scan scan.cpp
+gcc -o print print.c
+gcc -o scan scan.c
+
+or excute script file
+$ ./IO.sh
+
+excute for file
+$ ./print
+$ ./scan
