@@ -1,23 +1,27 @@
-#ifndef TERMINALCLEAR_HPP
-#define TERMINALCLEAR_HPP
+#ifndef OPERATOR_HPP
+#define OPERATOR_HPP
 
-#include <stdio.h>
-#include <termios.h>
-#include <unistd.h>
-#include <cstdlib>
 #include <iostream>
 
-class ControlIO {
-private:
-    static ControlIO* mp_Instance;
+using namespace std;
 
+class Point{
 public:
-    ControlIO();
-    ~ControlIO();
-    static ControlIO &getinstance();
+    int x;
+    int y;
 
-    int getch();
+    Point(int _x = 0, int _y = 0);
+    ~Point();
+    void print() const;
 
+    // + 연산
+    const Point operator+(Point& arg) const;
+
+    // 전위 ++
+    const Point& operator++();
+
+    // 후위 ++   후위 연산은 ++ 하기 전의 클래스를 반환해야 한다.
+    const Point operator++(int);
 };
 
-#endif // TERMINALCLEAR
+#endif // OPERATOR_HPP

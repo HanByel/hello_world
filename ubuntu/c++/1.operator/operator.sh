@@ -1,1 +1,1 @@
-g++ -o operator operator.cpp
+g++ -o operator main.cpp operator.cpp

@@ -7,7 +7,8 @@ CONFIG += debug
 LIBS += \
 
 SOURCES += \
-    operator.cpp
+    operator.cpp \
+    main.cpp
 
 HEADERS += \
     operator.hpp
