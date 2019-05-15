@@ -8,7 +8,7 @@ LIBS += \
     pthread.h
 
 SOURCES += \
-    pthread.cpp
+    pthread.c
 
 HEADERS += \
 
