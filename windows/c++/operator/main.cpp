@@ -1,6 +1,6 @@
 #include "operator.hpp"
 
-int main(){
+int main(void){
     Point p1(2, 3), p2(5, 5);
     Point p3;
 
