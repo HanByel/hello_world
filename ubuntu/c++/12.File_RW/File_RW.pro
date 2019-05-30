@@ -7,14 +7,14 @@ CONFIG += debug
 LIBS += \
 
 SOURCES += \
-    text_RW.cpp \
+    File_RW.cpp \
     main.cpp
 
 HEADERS += \
-    text_RW.hpp
+    File_RW.hpp
 
 DISTFILES += \
     Makefile \
     Readme.txt \
-    text_example.sh
+    File_RW.sh
 
