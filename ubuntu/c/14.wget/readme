@@ -29,6 +29,19 @@ PARAMETER
   address : 주소
   address_len : address의 크기
 
+/*    structure of hostent    */
+#include <netdb.h>
+
+struct hostent {
+  char *h_name; //공식 도메인 이름
+  char **h_aliases; //공식 이외 도메인 이름들
+  int h_addrtype; //주소정보 체계(IPv4: AF_INET, IPv6: AF_INET6)
+  int h_length; //IP주소의 크기를 담는다. (IPv4는 4)
+  char **h_addr_list; //도메인 이름에 대한 IP주소가 정수 형태로 반환될 때 이 멤버 변수를 이용 }
+}
+출처: https://sjh836.tistory.com/50 [빨간색코딩]
+
+
 /*    structure of address    */
 struct sockaddr {
     u_short sa_family;
